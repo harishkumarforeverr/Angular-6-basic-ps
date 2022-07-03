@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewModule } from './view/view.module';
 import { TestService } from './test.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RoutingpsModule } from './routingps/routingps.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ViewModule,
     HttpClientModule,
+    RoutingpsModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent],
