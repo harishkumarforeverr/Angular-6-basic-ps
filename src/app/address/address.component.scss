@@ -1,0 +1,18 @@
+.address {
+  background-color: grey;
+  text-align: center;
+  color: white;
+  &__name {
+    color: red;
+  }
+  &__address {
+    color: aqua;
+  }
+  &__phone {
+    color: crimson;
+  }
+}
+
+.title {
+  color: green;
+}

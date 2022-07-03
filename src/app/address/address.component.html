@@ -1,0 +1,16 @@
+<div class="address">
+  <p class="address__name">user name {{ user.name }}</p>
+  <p class="title">user title {{ user.desgination }}</p>
+  <button (click)="showTheAddress()">
+    {{ bool ? "show" : "hide" }}
+  </button>
+  <div *ngIf="bool">
+    <p class="address__address">user address {{ user.address }}</p>
+    <div *ngIf="user.phone.length > 0">
+      <p>phone no :</p>
+      <p class="address__phone" *ngFor="let phoneNumber of user.phone">
+        {{ phoneNumber }}
+      </p>
+    </div>
+  </div>
+</div>
