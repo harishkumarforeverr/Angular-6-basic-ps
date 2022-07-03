@@ -16,9 +16,18 @@ export class AppComponent implements OnInit {
   //   this.user.address = 'shiva thanda navipet';
   //   this.user.phone = ['12345', '6789'];
   // }
+  router = [
+    {
+      path: '/',
+      name: 'Home',
+    },
+    {
+      path: 'setting',
+      name: 'setting',
+    },
+  ];
   constructor(private svc: TestService, private http: HttpClient) {
     this.svc.printToConsole('harish is good boy123');
   }
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

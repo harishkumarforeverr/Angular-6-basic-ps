@@ -1,0 +1,5 @@
+<p>setting works!</p>
+<div *ngFor="let nav of router">
+  <a routerLink="{{ nav.path }}">{{ nav.name }}</a>
+</div>
+<router-outlet></router-outlet>

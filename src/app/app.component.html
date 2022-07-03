@@ -1,7 +1,13 @@
-<h1>hi !!!</h1>
+<!-- <h1>hi !!!</h1> -->
 <!-- <app-hello-world></app-hello-world>
 <date></date> -->
 <!-- <app-address [user]="user"></app-address> -->
 <!-- <app-inputps></app-inputps> -->
 <!-- <app-iphone></app-iphone> -->
-<app-git-prfile></app-git-prfile>
+<!-- <app-git-prfile></app-git-prfile> -->
+<!-- <a [routerLink]="home">home </a>
+<a [routerLink]="setting">setting </a> -->
+<div *ngFor="let nav of router">
+  <a routerLink="{{ nav.path }}">{{ nav.name }}</a>
+</div>
+<router-outlet></router-outlet>
